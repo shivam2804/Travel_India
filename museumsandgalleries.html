@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Museum</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="w3-container">
+                <h2 class="alignleft">Travel India</h2>
+                <h3 class="alignright">Atithi Devo Bhava</h3>
+            </div>
+        </header>
+        <nav>
+            <div class="w3-bar w3-card-4 w3-blue">
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="destination.html" class="w3-bar-item w3-button">Destinations</a>
+                <a href="aboutindia.html" class="w3-bar-item w3-button">About</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+            </div>
+        </nav>
+        <main>
+            <div class="w3-content w3-section" style="max-width:100%;">
+                <figure>
+                    <img class="mySlides" src="images/mus3.png" alt="Museum">
+                    <img class="mySlides" src="images/mus4.png" alt="Museum">
+                    <img class="mySlides" src="images/mus5.png" alt="Museum">
+                </figure>
+            </div>
+            <article>
+                <section>
+                    <h1 class="h1">Museums and Galleries</h1>
+                </section>
+                <section>
+                    <p class="indiadesc">
+                        India is a charming country of rich architectural beauty, culture, traditions and historical
+                        past. Being
+                        ornamented with historical monuments, it has a majestic past of Mughals and British that
+                        speak
+                        of the
+                        history. In each destination of India, travelers can come across a museum that displays the
+                        magnificent
+                        past of the region. And no tour to India is complete without paying a visit to a museum of
+                        the
+                        city that
+                        reflects the culture and history of ancient India in a most beautiful way. There are many
+                        popular
+                        museums in India that unfold lots of unheard truth of a bygone era.
+                    </p>
+                </section>
+                <div class="w3-container">
+                    <h6><b>List of some popular museums to visit:</b></h6>
+                    <table class="w3-table-all">
+                        <thead>
+                            <tr class="w3-light-grey">
+                                <th>Name</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Year Established</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Indian Museum</td>
+                            <td>Kolkata</td>
+                            <td>West Bengal</td>
+                            <td>1814</td>
+                        </tr>
+                        <tr>
+                            <td>Government Museum</td>
+                            <td>Chennai</td>
+                            <td>Tamil Nadu</td>
+                            <td>1851</td>
+                        </tr>
+                        <tr>
+                            <td>Napier Museum</td>
+                            <td>Thiruvanthapuram</td>
+                            <td>Kerala</td>
+                            <td>1855</td>
+                        </tr>
+                        <tr>
+                            <td>State Museum</td>
+                            <td>Lucknow</td>
+                            <td>Uttar Pradesh</td>
+                            <td>1863</td>
+                        </tr>
+                        <tr>
+                            <td>Nagpur Central Museum</td>
+                            <td>Nagpur</td>
+                            <td>Maharashtra</td>
+                            <td>1863</td>
+                        </tr>
+                        <tr>
+                            <td>Government Museum</td>
+                            <td>Bangalore</td>
+                            <td>Karnataka</td>
+                            <td>1864</td>
+                        </tr>
+                        <tr>
+                            <td>State Museum</td>
+                            <td>Lucknow</td>
+                            <td>Uttar Pradesh</td>
+                            <td>1863</td>
+                        </tr>
+                        <tr>
+                            <td>Bhau Daji Lad Museum</td>
+                            <td>Mumbai</td>
+                            <td>Maharashtra</td>
+                            <td>1872</td>
+                        </tr>
+                        <tr>
+                            <td>National Gallery of Modern Art</td>
+                            <td>Delhi</td>
+                            <td>Delhi</td>
+                            <td>1954</td>
+                        </tr>
+                        <tr>
+                            <td>Sanchi Archaeological Museum</td>
+                            <td>Sanchi</td>
+                            <td>Madhya Pradesh</td>
+                            <td>1919</td>
+                        </tr>
+                        <tr>
+                            <td>Aloyseum</td>
+                            <td>Mangalore</td>
+                            <td>Karnataka</td>
+                            <td>1913</td>
+                        </tr>
+                        <tr>
+                            <td>Albert Hall Museum</td>
+                            <td>Jaipur</td>
+                            <td>Rajasthan</td>
+                            <td>1887</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+        </main>
+        <footer>
+            <p>&copy; Copyright 2020 | Travel India</p>
+        </footer>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

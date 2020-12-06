@@ -1,0 +1,111 @@
+/*Created by Shivam Gupta C0779432-*/
+
+h3
+{
+  text-align: right;
+  font-size: small;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+  list-style-type:square ;
+}
+iframe{
+  width:"850px"; 
+  height:"500px";
+}
+
+table, th, td
+  {
+      border: 1px solid black;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: xx-large;
+      padding-top: 12px;
+      
+      
+}
+label
+{
+  font-family: serif;
+}
+
+td
+{
+  font-family: monospace;
+}
+
+hr
+{
+background-color: mediumslateblue;
+}
+#last
+{
+  display: inline-block; 
+  margin: 2%;
+  border: 1px solid #ccc;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: blueviolet;
+  box-shadow: .5em .5em .5em #404040;
+  width:1000px; height:"400px";
+
+}
+#container
+{
+  height:'1030px' ; width:'600px';
+}
+
+.dropbtn {
+  
+  
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+  background-color: white;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*tablet layout*/
+@media screen and (max-width: 500px)
+{
+  iframe
+  {
+    width: 100%;
+  }
+  #last
+  {
+    width: 100%;
+  }
+  #container
+  {
+    width: 100%;
+  }

@@ -1,0 +1,182 @@
+/*Author:Savneet(C0777993)
+    Added on :09-11-2020*/
+.mySlides {
+    display: none;
+    width:98%;
+    height:550px;
+    margin:1%
+    
+}
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#imagecontainer{
+  display: block;
+  margin: 1%;
+  margin-left: 3%;
+	padding: 1em;
+	/*border-radius: 1em;
+	background-color: #FFFFFF;
+  box-shadow: .5em .5em .5em #404040;*/
+  width: 100%;
+}
+#visacontainer{ 
+  display: inline-block; 
+  margin: 2%;
+  border: 1px solid #ccc;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: #FFFFFF;
+  box-shadow: .5em .5em .5em #404040;
+  width: 96%;
+}
+.h1{
+  text-align: center;
+}
+.floatleft{
+width: 97%;
+}
+.link{
+  color: skyblue;
+  }
+.alignleft {
+  float: left;
+  margin-left: 1%;
+  font-size: 25px;  
+}
+.alignright {
+  float: right;
+  margin-right: 1%;
+  font-family: "Tangerine", serif;
+  font-size: 25px;
+}
+
+.indiadesc{
+  align-content: center;
+  text-align: center;
+  margin-left: 2%;
+  margin-right:2%;
+}
+
+.imgicon{
+  max-width: 100%;
+	margin: 1%;
+	width: 100%;
+}
+
+div.gallery {
+  margin: 1%;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  height: 350px;
+  border-radius: 1em;
+	background-color: #FFFFFF;
+  box-shadow: .5em .5em .5em #404040;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  
+}
+
+div.gallery img {
+  width: 98%;
+  height: 300px;
+  max-width: 100%;
+  margin: 1%;
+  	
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+footer {
+  display: block;
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+/*Styles for tablet layout*/
+@media screen and (min-width: 481px){
+  .alignleft {
+    font-size: 35px;     
+  }
+  .alignright {
+    font-size: 35px;
+  }
+	.imgicon{
+		width:45%;
+  }
+  #imagecontainer{
+    width: 46%;
+  }
+  div.gallery {
+    margin: 2%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 45%;
+  }
+  div.gallery img {
+    width: 98%;    
+    max-width: 100%;
+    margin: 1%;    
+  }
+  .floatleft{
+    float: left;
+    width: 20%;
+    height: 150px; 
+    margin-right: 1%;
+  }
+  .textonright{
+    margin-left: 2%;
+  }
+  #visacontainer{
+    height: 220px;
+  }
+
+}
+
+/*Styles for desktop layout*/
+@media screen and (min-width: 769px){
+  .alignleft {
+    font-size: 35px;
+     
+  }
+  .alignright {
+    font-size: 35px;
+  }
+	.imgicon{
+		width:20%;
+  }
+  div.gallery {
+    margin: 1%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 23%;
+  }
+  div.gallery img {
+    width: 97%;    
+    max-width: 100%;
+    margin: 2%;    
+  }
+  .floatleft{
+    float: left;
+    width: 18%;
+    height: 150px; 
+    margin-right: 1%;   
+
+  }
+  .textonright{
+    margin-left: 2%;
+  }
+  #visacontainer{
+    height: 200px;
+  }
+
+ 
+}

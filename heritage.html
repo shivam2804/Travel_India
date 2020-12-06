@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>heritage</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="w3-container">
+                <h2 class="alignleft">Travel India</h2>
+                <h3 class="alignright">Atithi Devo Bhava</h3>
+            </div>
+        </header>
+        <nav>
+            <div class="w3-bar w3-card-4 w3-blue">
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="destination.html" class="w3-bar-item w3-button">Destinations</a>
+                <a href="aboutindia.html" class="w3-bar-item w3-button">About</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+            </div>
+        </nav>
+        <main>
+            <div class="w3-content w3-section" style="max-width:100%;">
+                <figure>
+                    <img class="mySlides" src="images/her2.png" alt="heritage">
+                    <img class="mySlides" src="images/her3.png" alt="heritage">
+                    <img class="mySlides" src="images/her4.png" alt="heritage">
+                    <img class="mySlides" src="images/her5.png" alt="heritage">
+                    <img class="mySlides" src="images/her6.png" alt="heritage">
+                </figure>
+            </div>
+            <article>
+                <h1 class="h1">Heritage</h1>
+                <p class="indiadesc">
+                    Indian culture is the heritage of social norms, ethical values, traditional customs, belief systems,
+                    political systems, artifacts and technologies that originated in or are associated with the Indian
+                    subcontinent. The term also applies beyond India to countries and cultures whose histories are
+                    strongly connected to India by immigration, colonization, or influence, particularly in South Asia
+                    and Southeast Asia. India's languages, religions, dance, music, architecture, food and customs
+                    differ from place to place within the country.Indian culture, often labelled as an amalgamation of
+                    several cultures, has been influenced by a history that is several millennia old, beginning with the
+                    Indus Valley Civilization. Many elements of Indian culture, such as Indian religions, mathematics,
+                    philosophy, cuisine, languages,dance, music and movies have had a profound impact across the
+                    Indosphere, Greater India and the
+                    world.
+                </p>
+                <section>
+                    <div class="w3-container">
+                        <h6><b>List of UNESCO World Heritage Sites in India:</b></h6>
+                        <ul>
+                            <li>Ajanta Caves (1983)</li>
+                            <li>Agra Fort (1983)</li>
+                            <li>Buddhist Monuments at Sanchi (1989)</li>
+                            <li>Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar (2016)</li>
+                            <li>Champaner-Pavagadh Archaeological Park (2004)</li>
+                            <li>Chhatrapati Shivaji Terminus (formerly Victoria Terminus) (2004)</li>
+                            <li>Churches and Convents of Goa (1986)</li>
+                            <li>Elephanta Caves (1987)</li>
+                            <li>Ellora Caves (1983)</li>
+                            <li>Fatehpur Sikri (1986)</li>
+                            <li>Great Living Chola Temples (1987,2004)</li>
+                            <li>Group of Monuments at Hampi (1986)</li>
+                            <li>Group of Monuments at Mahabalipuram (1984)</li>
+                            <li>Group of Monuments at Pattadakal (1987)</li>
+                            <li>Hill Forts of Rajasthan (2013)</li>
+                            <li>Historic City of Ahmadabad (2017)</li>
+                            <li>Humayun's Tomb, Delhi (1993)</li>
+                            <li>Taj Mahal (1983)</li>
+                            <li>Khangchendzonga National Park (2016)</li>
+                            <li>Sun Temple, Konârak (1984)</li>
+                            <li>The Jantar Mantar, Jaipur (2010)</li>
+                            <li>Western Ghats (2012)</li>
+                            <li>Sundarbans National Park (1987)</li>
+                            <li>Red Fort Complex (2007)</li>
+                            <li>Qutb Minar and its Monuments, Delhi (1993)</li>
+                            <li>Manas Wildlife Sanctuary (1985)</li>
+                            <li>Keoladeo National Park (1985)</li>
+                            <li>Mahabodhi Temple Complex at Bodh Gaya (2002)</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; Copyright 2020 | Travel India</p>
+        </footer>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
